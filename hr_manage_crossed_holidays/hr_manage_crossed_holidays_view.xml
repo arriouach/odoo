@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<openerp>
+	<data>
+		<record id="view_hr_manage_crossed_holidays_filter"
+			model="ir.ui.view">
+			<field name="name">hr.manage.crossed.holidays.filter</field>
+			<field name="model">hr.manage.crossed.holidays</field>
+			<field name="arch" type="xml">
+				<search string="Search Holiday">
+					<field name="name" />
+					<separator />
+					<filter domain="[('weekend','=',True)]" string="Is weekend" />
+					<separator />
+					<filter name="inactive_holidays" string="Inactive Holidays"
+						domain="[('active', '=', False)]" help="" />
+					<filter name="paid_holidays" string="Paid Holidays"
+						domain="[('paid', '=', True)]" help="" />
+					<separator />
+					<field name="day" />
+					<field name="month" />
+					<group expand="0" string="Group By">
+						<filter name="company_id" string="Companies"
+							context="{'group_by':'company_id'}" />
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="view_standard_holiday_tree">
+			<field name="name">hr.standard.holiday.tree</field>
+			<field name="model">hr.manage.crossed.holidays</field>
+			<field name="arch" type="xml">
+				<tree string="Standard holidays">
+					<field name="name" />
+					<field name="weekend" />
+					<field name="day" invisible="1" />
+					<field name="month" invisible="1" />
+					<field name="company_id" />
+					<field name="active" />
+					<field name="date_from_gen" />
+					<field name="nbr_days" sum="Total" />
+					<field name="paid" />
+					<field name="w_day" />
+				</tree>
+			</field>
+		</record>
+
+		<!-- Holidays -->
+		<record model="ir.ui.view" id="standard_holidays_form">
+			<field name="name">Holidays</field>
+			<field name="model">hr.manage.crossed.holidays</field>
+			<field name="arch" type="xml">
+				<form string="Holidays Management">
+					<group col="4">
+						<field name="name" />
+						<field name="weekend" />
+
+						<group col="4" colspan="2"
+							attrs="{'invisible': [('weekend', '=', True)]}">
+
+							<label for="Day" string="Day-Month" />
+							<div>
+								<field class="oe_inline" name="day"
+									attrs="{'required': [('weekend', '=', False)]}" />
+								<span>-</span>
+								<field class="oe_inline" name="month"
+									attrs="{'required': [('weekend', '=', False)]}" />
+							</div>
+						</group>
+						<field name="nbr_days"
+							attrs="{'invisible': [('weekend', '=', True)],'required': [('weekend', '=', False)]}" />
+						<field name="active" />
+						<field name="paid"
+							attrs="{'invisible': [('weekend', '=', True)]}" />
+						<field name="w_day"
+							attrs="{'invisible': [('weekend', '=', False)],'required': [('weekend', '=', True)]}" />
+						<field name="company_id" groups="base.group_multi_company" />
+					</group>
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window"
+			id="action_standard_holidays">
+			<field name="name">Holidays</field>
+			<field name="res_model">hr.manage.crossed.holidays</field>
+			<field name="view_type">form</field>
+			<field name="view_id" ref="view_standard_holiday_tree" />
+			<field name="context">{}</field>
+			<field name="domain">[]</field>
+			<field name="search_view_id"
+				ref="view_hr_manage_crossed_holidays_filter" />
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">
+					Click to create a new holidays.
+				</p>
+				<p />
+
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window.view"
+			id="action_standard_holidays_tree">
+			<field name="sequence" eval="2" />
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="view_standard_holiday_tree" />
+			<field name="act_window_id" ref="action_standard_holidays" />
+		</record>
+
+		<record model="ir.actions.act_window.view"
+			id="action_standard_holidays_form">
+			<field name="sequence" eval="3" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="standard_holidays_form" />
+			<field name="act_window_id" ref="action_standard_holidays" />
+		</record>
+
+		<!-- 		Menu		 -->
+		<menuitem id="menu_open_view_standard_holidays_config"
+			action="action_standard_holidays" parent="hr.menu_hr_configuration"
+			name="Official holidays" groups="manage_crossed_holidays_group" sequence="10" />
+
+		<!-- ############################### -->
+		<!--hr_manage_crossed_holidays.hr_holidays -->
+		<!-- ############################### -->
+		<record model="ir.ui.view"
+			id="view_hr_manage_crossed_holidays_hr_holidays_tree">
+			<field name="name">hr_manage_crossed_holidays.hr_holidays.tree</field>
+			<field name="model">hr_manage_crossed_holidays.hr_holidays</field>
+			<field name="arch" type="xml">
+				<tree string="Standard holidays">
+					<field name="holidays_id" invisible="1" />
+					<field name="standard_holidays_id" />
+					<field name="weekend" />
+					<field name="date_from" />
+					<field name="nbr_days" />
+					<field name="paid" />
+					<field name="w_day" />
+				</tree>
+			</field>
+		</record>
+	</data>
+</openerp>

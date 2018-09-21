@@ -1,0 +1,406 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_manage_crossed_holidays
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-09-19 21:50+0000\n"
+"PO-Revision-Date: 2018-09-21 11:55+0100\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: ar\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: hr_manage_crossed_holidays
+#: model:ir.actions.act_window,help:hr_manage_crossed_holidays.action_standard_holidays
+msgid ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"\t\t\t\t\tClick to create a new holidays.\n"
+"\t\t\t\t</p>\n"
+"\t\t\t\t<p/>\n"
+"\n"
+"\t\t\t"
+msgstr ""
+"<p class=\"oe_view_nocontent_create\">\n"
+"أنقر هنا ﻹضافة عطلة رسمية.\n"
+"</p>\n"
+"<p/>"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,active:0
+msgid "Active"
+msgstr "مفعل"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "April"
+msgstr "أبريل"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "August"
+msgstr "غشت"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_filter
+msgid "Companies"
+msgstr "شركات"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,company_id:0
+msgid "Company"
+msgstr "شركة"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,create_uid:0
+#: field:hr_manage_crossed_holidays.hr_holidays,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,create_date:0
+#: field:hr_manage_crossed_holidays.hr_holidays,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr_manage_crossed_holidays.hr_holidays,cross_weekend:0
+msgid "Cross weekend"
+msgstr "ضمن عطلة نهاية الاسبوع"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.holidays:hr_manage_crossed_holidays.edit_holiday_new_inherit_0
+msgid "Crossed holidays"
+msgstr "تقاطع العطل"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,date_from_gen:0
+#: field:hr_manage_crossed_holidays.hr_holidays,date_from:0
+msgid "Date from"
+msgstr "ابتداء من"
+
+#. module: hr_manage_crossed_holidays
+#: help:hr.manage.crossed.holidays,message_last_post:0
+#: help:hr_manage_crossed_holidays.hr_holidays,message_last_post:0
+msgid "Date of the last message posted on the record."
+msgstr "Date of the last message posted on the record."
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,day:0
+msgid "Day"
+msgstr "يوم"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.standard_holidays_form
+msgid "Day-Month"
+msgstr "شهر-يوم"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "December"
+msgstr "دجنبر"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,display_name:0
+#: field:hr_manage_crossed_holidays.hr_holidays,display_name:0
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: hr_manage_crossed_holidays
+#: model:ir.model,name:hr_manage_crossed_holidays.model_hr_manage_crossed_holidays
+#: model:ir.model,name:hr_manage_crossed_holidays.model_hr_manage_crossed_holidays_hr_holidays
+msgid "Email Thread"
+msgstr "المحادثة البريدية"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "February"
+msgstr "فبراير"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,message_follower_ids:0
+#: field:hr_manage_crossed_holidays.hr_holidays,message_follower_ids:0
+msgid "Followers"
+msgstr "Followers"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Friday"
+msgstr "الجمعة"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_filter
+msgid "Group By"
+msgstr "Group By"
+
+#. module: hr_manage_crossed_holidays
+#: help:hr.manage.crossed.holidays,message_summary:0
+#: help:hr_manage_crossed_holidays.hr_holidays,message_summary:0
+msgid "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+msgstr "Holds the Chatter summary (number of messages, ...). This summary is directly in html format in order to be inserted in kanban views."
+
+#. module: hr_manage_crossed_holidays
+#: field:hr_manage_crossed_holidays.hr_holidays,holidays_id:0
+#: field:hr_manage_crossed_holidays.hr_holidays,standard_holidays_id:0
+#: model:ir.actions.act_window,name:hr_manage_crossed_holidays.action_standard_holidays
+#: model:ir.ui.menu,name:hr_manage_crossed_holidays.menu_open_view_standard_holidays_config
+msgid "Official Holidays"
+msgstr "العطل الرسمية"
+
+#. module: hr_manage_crossed_holidays
+#: model:res.groups,name:hr_manage_crossed_holidays.standard_holidays_group
+msgid "Holidays Access"
+msgstr "تدبير تقاطع العطل"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.holidays:hr_manage_crossed_holidays.edit_holiday_new_inherit_0
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.standard_holidays_form
+msgid "Holidays Management"
+msgstr "تدبير العطل"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,id:0
+#: field:hr_manage_crossed_holidays.hr_holidays,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_manage_crossed_holidays
+#: help:hr.manage.crossed.holidays,message_unread:0
+#: help:hr_manage_crossed_holidays.hr_holidays,message_unread:0
+msgid "If checked new messages require your attention."
+msgstr "If checked new messages require your attention."
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_filter
+msgid "Inactive Holidays"
+msgstr "العطل الغير المفعلة"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,message_is_follower:0
+#: field:hr_manage_crossed_holidays.hr_holidays,message_is_follower:0
+msgid "Is a Follower"
+msgstr "Is a Follower"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_filter
+msgid "Is weekend"
+msgstr "عطلة نهاية الاسبوع"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "January"
+msgstr "يناير"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "July"
+msgstr "يوليوز"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "June"
+msgstr "يونيو"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,message_last_post:0
+#: field:hr_manage_crossed_holidays.hr_holidays,message_last_post:0
+msgid "Last Message Date"
+msgstr "Last Message Date"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,__last_update:0
+#: field:hr_manage_crossed_holidays.hr_holidays,__last_update:0
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,write_uid:0
+#: field:hr_manage_crossed_holidays.hr_holidays,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,write_date:0
+#: field:hr_manage_crossed_holidays.hr_holidays,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: hr_manage_crossed_holidays
+#: model:ir.model,name:hr_manage_crossed_holidays.model_hr_holidays
+msgid "Leave"
+msgstr "مغادرة"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "March"
+msgstr "مارس"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "May"
+msgstr "ماي"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,message_ids:0
+#: field:hr_manage_crossed_holidays.hr_holidays,message_ids:0
+msgid "Messages"
+msgstr "Messages"
+
+#. module: hr_manage_crossed_holidays
+#: help:hr.manage.crossed.holidays,message_ids:0
+#: help:hr_manage_crossed_holidays.hr_holidays,message_ids:0
+msgid "Messages and communication history"
+msgstr "Messages and communication history"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Monday"
+msgstr "الاثنين"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,month:0
+msgid "Month"
+msgstr "شهر"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,name:0
+msgid "Name"
+msgstr "اسم"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "November"
+msgstr "نونبر"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,nbr_days:0
+#: field:hr_manage_crossed_holidays.hr_holidays,nbr_days:0
+msgid "Number of days"
+msgstr "عدد الايام"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "October"
+msgstr "أكتوبر"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,paid:0
+#: field:hr_manage_crossed_holidays.hr_holidays,paid:0
+msgid "Paid"
+msgstr "مدفوعة"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_filter
+msgid "Paid Holidays"
+msgstr "العطل المدفوعة"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr_manage_crossed_holidays.hr_holidays,quant:0
+msgid "Quantity"
+msgstr "الكمية"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Saturday"
+msgstr "السبت"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_filter
+msgid "Search Holiday"
+msgstr "بحث عن العطل"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,month:0
+msgid "September"
+msgstr "شتنبر"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.holidays,standard_holidays_ids:0
+msgid "Standard Holidays"
+msgstr "Standard Holidays"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_standard_holiday_tree
+#: view:hr_manage_crossed_holidays.hr_holidays:hr_manage_crossed_holidays.view_hr_manage_crossed_holidays_hr_holidays_tree
+msgid "Standard holidays"
+msgstr "Standard holidays"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,message_summary:0
+#: field:hr_manage_crossed_holidays.hr_holidays,message_summary:0
+msgid "Summary"
+msgstr "Summary"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Sunday"
+msgstr "اﻷحد"
+
+#. module: hr_manage_crossed_holidays
+#: model:res.groups,comment:hr_manage_crossed_holidays.standard_holidays_group
+msgid "The user will be able to manage the holidays."
+msgstr "يسمح للمستخدم بتدبير العطل الرسمية."
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Thursday"
+msgstr "الخميس"
+
+#. module: hr_manage_crossed_holidays
+#: view:hr.holidays:hr_manage_crossed_holidays.edit_holiday_new_inherit_0
+#: view:hr.manage.crossed.holidays:hr_manage_crossed_holidays.view_standard_holiday_tree
+msgid "Total"
+msgstr "المجموع"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Tuesday"
+msgstr "الثلاثاء"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,message_unread:0
+#: field:hr_manage_crossed_holidays.hr_holidays,message_unread:0
+msgid "Unread Messages"
+msgstr "Unread Messages"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,website_message_ids:0
+#: field:hr_manage_crossed_holidays.hr_holidays,website_message_ids:0
+msgid "Website Messages"
+msgstr "Website Messages"
+
+#. module: hr_manage_crossed_holidays
+#: help:hr.manage.crossed.holidays,website_message_ids:0
+#: help:hr_manage_crossed_holidays.hr_holidays,website_message_ids:0
+msgid "Website communication history"
+msgstr "Website communication history"
+
+#. module: hr_manage_crossed_holidays
+#: selection:hr.manage.crossed.holidays,w_day:0
+#: selection:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Wednesday"
+msgstr "الأربعاء"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,w_day:0
+#: field:hr_manage_crossed_holidays.hr_holidays,w_day:0
+msgid "Week-day"
+msgstr "يوم الاسبوع"
+
+#. module: hr_manage_crossed_holidays
+#: field:hr.manage.crossed.holidays,weekend:0
+#: field:hr_manage_crossed_holidays.hr_holidays,weekend:0
+msgid "Weekend"
+msgstr "عطلة نهاية الاسبوع"
