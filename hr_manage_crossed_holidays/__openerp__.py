@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+
 ######################################################################################
 #
 #    Manage crossed holidays
@@ -69,7 +70,8 @@ Installation:
     # only loaded in demonstration mode
     'demo': [
         # 'demo.xml',
-    ], 
+    ],
+    'license': 'AGPL-3',
     'auto_install': False,
     'installable': True,
     'images' : ['images/holidays_list_view_screenshot.png', 'images/holidays_form_view_weekend.png',
