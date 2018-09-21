@@ -50,8 +50,8 @@ Installation:
 
     'author': "Mohamed ARRIOUACH",
     'website': "",
-    'price': 9.00,
-    'currency': 'USD',
+    #'price': 9.00,
+    #'currency': 'USD',
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/openerp/addons/base/module/module_data.xml
